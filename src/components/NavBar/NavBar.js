@@ -1,6 +1,5 @@
 import CardWidget from "./CardWidget/CardWidget";
 import { Button } from 'react-bootstrap';
-import Style from "../Style";
 
 const NavBar = () => {
     return (

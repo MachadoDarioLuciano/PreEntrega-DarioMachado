@@ -1,16 +1,15 @@
-import CardWidget from "./CardWidget/CardWidget";
-import { Button } from 'react-bootstrap';
+import CardWidget from "../CardWidget/CardWidget";
+import { NavLink , Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <nav>
-            <h3>Eccomerce</h3>
-
-            <div>
-                <button className="btn btn-primary">Silla</button>
-                <button className="btn btn-success">Mesa</button>
-                <button className="btn btn-warning">Escritorio</button>
-                <button className="btn btn-info">Perchero</button>
+        <nav className="Navbar">
+            <Link to='/'>
+                <h3>Eccomerce</h3>
+            </Link>
+            
+            <div className="Categories">
+                <NavLink to={`category/muebles`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Muebles</NavLink>
             </div>
 
             <CardWidget />

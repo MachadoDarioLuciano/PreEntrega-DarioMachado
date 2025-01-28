@@ -1,10 +1,11 @@
-import cart from './assets/cart.jpg'
+import { BsCart4 } from "react-icons/bs";
+
 
 const CardWidget = () => {
     return (
         <div>
-            <img src={cart} alt="cart-widget"/>
-            0
+            <BsCart4 />
+            <p>0</p>
         </div>
     )
 }
